@@ -1,0 +1,4 @@
+Name,Number of Calls,Elapsed Inclusive Time %,Elapsed Exclusive Time %,Avg Elapsed Inclusive Time,Avg Elapsed Exclusive Time,
+"performance_analyzing.exe","26,769",100.00,65.08,14.33,0.00,
+"ucrtbased.dll",20,34.91,34.91,0.25,0.25,
+"KERNEL32.DLL",1,0.00,0.00,0.00,0.00,

@@ -1,0 +1,3 @@
+Type,Unique ID,ID,Name,Begin Time,End Time,Life Time,
+"Process",0,4064,"performance_analyzing.exe","1,255.86","1,274.48",18.62,
+"Thread",0,19652,"Unnamed thread","1,256.47","1,274.26",17.79,

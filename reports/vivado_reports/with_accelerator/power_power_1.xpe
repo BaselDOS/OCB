@@ -1,0 +1,442 @@
+<?xml version="1.0"?>
+<POWERDATA author="Vivado Power Analysis" dataVersion="2022.2" design="design_1_wrapper" designState="synthesized" date="Mon May 15 16:26:22 2023" pwrOpt="None" activityLevel="vectorless">
+	<ENVIRONMENT>
+		<DEVICE part="xc7k325t" grade="commercial" package="ffg900" speed="-2" process="typical" vid="No">
+		</DEVICE>
+		<VOLTAGESOURCES>
+			<SOURCE name="Vcco25" voltage="2.500000" icc="0.000001" iccq="0.001000" power="0.002502">
+			</SOURCE>
+			<SOURCE name="Vcco15" voltage="1.500000" icc="0.405737" iccq="0.001000" power="0.610105">
+			</SOURCE>
+			<SOURCE name="Vccbram" voltage="1.000000" icc="0.003152" iccq="0.002929" power="0.006081">
+			</SOURCE>
+			<SOURCE name="Vccint" voltage="1.000000" icc="0.474508" iccq="0.080074" power="0.554581">
+			</SOURCE>
+			<SOURCE name="Vccaux" voltage="1.800000" icc="0.474995" iccq="0.028784" power="0.906802">
+			</SOURCE>
+			<SOURCE name="Vccadc" voltage="1.800000" icc="0.001600" iccq="0.020000" power="0.038880">
+			</SOURCE>
+		</VOLTAGESOURCES>
+		<THERMAL>
+			<AMBIENT value="25.000000">
+			</AMBIENT>
+			<AIRFLOW value="250.000000">
+			</AIRFLOW>
+			<HEATSINK value="medium (Medium Profile)">
+			</HEATSINK>
+			<BOARDSELECTION value="medium (10&quot;x10&quot;)">
+			</BOARDSELECTION>
+			<BOARDLAYERS value="12to15 (12 to 15 Layers)">
+			</BOARDLAYERS>
+			<TSA value="3.300000">
+			</TSA>
+			<TJB value="2.800000">
+			</TJB>
+			<BOARDTEMP value="25.0 (C)">
+			</BOARDTEMP>
+			<JUNCTION value="28.8 (C)">
+			</JUNCTION>
+		</THERMAL>
+	</ENVIRONMENT>
+	<BLOCKDETAILS>
+		<BYTYPE>
+			<BLOCKTYPE name="Clocks">
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/clk_pll_i" freq="100.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000131" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" freq="100.000001" belFanout="34831" sliceFanout="11548" FoPerSite="3.016193" sliceEnableRate="0.398742" leafs="400.857971" hrows="5.000000" power="0.157986" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_clk_ibuf/sys_clk_ibufg" freq="200.000001" belFanout="2" sliceFanout="2" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="I/O">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_iodelay_ctrl/CLK" freq="200.000001" belFanout="62" sliceFanout="20" FoPerSite="3.100000" sliceEnableRate="0.790158" leafs="8.616000" hrows="1.000000" power="0.002661" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="sys_diff_clock_clk_p" freq="200.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000348">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/clk_div2_bufg_in" freq="200.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000261" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/gen_ui_extra_clocks.u_bufg_clk_div2_n_0" freq="200.000001" belFanout="13" sliceFanout="4" FoPerSite="3.250000" sliceEnableRate="1.000000" leafs="3.863000" hrows="1.000000" power="0.001508" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/freq_refclk" freq="800.000076" belFanout="22" sliceFanout="22" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.001855" enableRate="1" bufType="PLL">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_in_gen.phaser_in_n_7" freq="800.000076" belFanout="0" sliceFanout="0" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/B_rclk" freq="800.000076" belFanout="0" sliceFanout="0" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_in_gen.phaser_in_n_7" freq="800.000076" belFanout="0" sliceFanout="0" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_in_gen.phaser_in_n_7" freq="800.000076" belFanout="0" sliceFanout="0" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_in_gen.phaser_in_n_7" freq="800.000076" belFanout="0" sliceFanout="0" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/B_rclk" freq="800.000076" belFanout="0" sliceFanout="0" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_in_gen.phaser_in_n_7" freq="800.000076" belFanout="0" sliceFanout="0" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_in_gen.phaser_in_n_7" freq="800.000076" belFanout="0" sliceFanout="0" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/mem_refclk" freq="400.000002" belFanout="22" sliceFanout="22" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000927" enableRate="1" bufType="PLL">
+				</CLOCK>
+				<CLOCK name="design_1_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0" freq="30.000301" belFanout="239" sliceFanout="70" FoPerSite="3.414286" sliceEnableRate="0.499790" leafs="18.646000" hrows="1.000000" power="0.000780" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/pll_clk3" freq="100.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="2.699000" hrows="1.000000" power="0.000504" enableRate="1" bufType="BUFH">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/pll_clk3_out" freq="100.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000131" enableRate="1" bufType="PLL">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk" freq="400.000002" belFanout="18" sliceFanout="18" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000568" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk_delayed" freq="400.000002" belFanout="2" sliceFanout="2" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk" freq="400.000002" belFanout="18" sliceFanout="18" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000568" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk_delayed" freq="400.000002" belFanout="2" sliceFanout="2" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk" freq="400.000002" belFanout="18" sliceFanout="18" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000568" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk_delayed" freq="400.000002" belFanout="2" sliceFanout="2" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk" freq="400.000002" belFanout="18" sliceFanout="18" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000568" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk_delayed" freq="400.000002" belFanout="2" sliceFanout="2" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk" freq="400.000002" belFanout="18" sliceFanout="18" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000568" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clk_delayed" freq="400.000002" belFanout="2" sliceFanout="2" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk" freq="400.000002" belFanout="18" sliceFanout="18" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000568" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk_delayed" freq="400.000002" belFanout="2" sliceFanout="2" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk" freq="400.000002" belFanout="18" sliceFanout="18" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000568" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk_delayed" freq="400.000002" belFanout="2" sliceFanout="2" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk" freq="400.000002" belFanout="18" sliceFanout="18" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000568" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk_delayed" freq="400.000002" belFanout="2" sliceFanout="2" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/mmcm_ps_clk" freq="50.000000" belFanout="21" sliceFanout="12" FoPerSite="1.750000" sliceEnableRate="0.619048" leafs="4.639000" hrows="1.000000" power="0.000418" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/mmcm_ps_clk_bufg_in" freq="50.000000" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000065" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk" freq="400.000002" belFanout="12" sliceFanout="12" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000437" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk_delayed" freq="400.000002" belFanout="0" sliceFanout="0" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/pll_clkfbout" freq="200.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000348" enableRate="1" bufType="PLL">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_in_gen.phaser_in_0" freq="400.000038" belFanout="8" sliceFanout="8" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000323" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_in_gen.phaser_in_0" freq="400.000038" belFanout="8" sliceFanout="8" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000323" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_in_gen.phaser_in_0" freq="400.000038" belFanout="8" sliceFanout="8" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000323" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_in_gen.phaser_in_0" freq="400.000038" belFanout="8" sliceFanout="8" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000323" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_in_gen.phaser_in_0" freq="400.000038" belFanout="8" sliceFanout="8" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000323" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_in_gen.phaser_in_0" freq="400.000038" belFanout="8" sliceFanout="8" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000323" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_in_gen.phaser_in_0" freq="400.000038" belFanout="8" sliceFanout="8" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000323" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_in_gen.phaser_in_0" freq="400.000038" belFanout="8" sliceFanout="8" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000323" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk" freq="400.000002" belFanout="7" sliceFanout="7" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000291" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk_delayed" freq="400.000002" belFanout="0" sliceFanout="0" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/mmcm_clkout0" freq="100.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000131" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/ui_addn_clk_0" freq="100.000001" belFanout="0" sliceFanout="0" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/mmcm_clkout1" freq="100.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000131" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/ui_addn_clk_1" freq="100.000001" belFanout="0" sliceFanout="0" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/mmcm_clkout2" freq="100.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000131" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/ui_addn_clk_2" freq="100.000001" belFanout="0" sliceFanout="0" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/mmcm_clkout3" freq="100.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000131" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/ui_addn_clk_3" freq="100.000001" belFanout="0" sliceFanout="0" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/mmcm_clkout4" freq="100.000001" belFanout="1" sliceFanout="1" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000131" enableRate="1" bufType="MMCM">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/ui_addn_clk_4" freq="100.000001" belFanout="0" sliceFanout="0" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="BUFG">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk" freq="400.000002" belFanout="5" sliceFanout="5" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000222" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clk_delayed" freq="400.000002" belFanout="0" sliceFanout="0" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000000" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv" freq="200.000001" belFanout="11" sliceFanout="11" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000205" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv" freq="200.000001" belFanout="11" sliceFanout="11" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000205" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv" freq="200.000001" belFanout="11" sliceFanout="11" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000205" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv" freq="200.000001" belFanout="11" sliceFanout="11" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000205" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/oserdes_clkdiv" freq="200.000001" belFanout="11" sliceFanout="11" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000205" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv" freq="200.000001" belFanout="11" sliceFanout="11" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000205" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv" freq="200.000001" belFanout="11" sliceFanout="11" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000205" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv" freq="200.000001" belFanout="11" sliceFanout="11" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000205" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clkdiv" freq="100.000001" belFanout="13" sliceFanout="13" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000116" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clkdiv" freq="100.000009" belFanout="9" sliceFanout="9" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000088" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clkdiv" freq="100.000009" belFanout="9" sliceFanout="9" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000088" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv" freq="100.000009" belFanout="9" sliceFanout="9" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000088" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clkdiv" freq="100.000009" belFanout="9" sliceFanout="9" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000088" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clkdiv" freq="100.000009" belFanout="9" sliceFanout="9" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000088" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clkdiv" freq="100.000009" belFanout="9" sliceFanout="9" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000088" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clkdiv" freq="100.000009" belFanout="9" sliceFanout="9" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000088" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clkdiv" freq="100.000009" belFanout="9" sliceFanout="9" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000088" enableRate="1" bufType="PHASER_IN">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clkdiv" freq="100.000001" belFanout="7" sliceFanout="7" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000073" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/oserdes_clkdiv" freq="100.000001" belFanout="6" sliceFanout="6" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000064" enableRate="1" bufType="PHASER_OUT">
+				</CLOCK>
+				<CLOCK name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/sync_pulse" freq="25.000000" belFanout="22" sliceFanout="22" FoPerSite="1.000000" sliceEnableRate="0.000000" leafs="0.000000" hrows="0.000000" power="0.000058" enableRate="1" bufType="PLL">
+				</CLOCK>
+				<CLOCK name="design_1_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/Functional_Reset" freq="30.000301" belFanout="1" sliceFanout="0" FoPerSite="1.000000" sliceEnableRate="0.500000" leafs="0.000000" hrows="0.000000" power="0.000004" enableRate="1" bufType="luts">
+				</CLOCK>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="LOGIC">
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="200.000001" clockFreq2="200.000001" toggleRate="0.022121" toggleRate2="0.000000" totalRate="0.096560" name="clk_div2_bufg_in" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.000000" fanout="22.333333" ru="0.000000" fanout2="0.000000" totalFanout="67.000000" fanoutRate="0.096560" numNets="5" extNets="3" luts="4" logicCap="316800" signalCap="6049.827393" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="100.000001" clockFreq2="100.000001" toggleRate="13.090403" toggleRate2="11.177953" totalRate="224352.889561" name="clk_pll_i" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.000000" fanout="3.334351" ru="0.000000" fanout2="3.159855" totalFanout="52406.000000" fanoutRate="249996.018000" numNets="22378" extNets="15717" SMUX="676" carry4s="241" luts="15903" logicCap="8514327498" signalCap="5357309.344986" power="0.040862" sp="0.025548">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="30.000301" clockFreq2="30.000301" toggleRate="9.722506" toggleRate2="16.524014" totalRate="1035.461833" name="design_1_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.000000" fanout="1.860656" ru="0.000000" fanout2="2.129630" totalFanout="227.000000" fanoutRate="224.626415" numNets="141" extNets="122" luts="118" logicCap="56109600" signalCap="26372.385803" power="0.000078" sp="0.000027">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="30.000301" clockFreq2="30.000301" toggleRate="9.013647" toggleRate2="50.881762" totalRate="206.122195" name="design_1_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/UPDATE" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.000000" fanout="4.071429" ru="0.000000" fanout2="1.500000" totalFanout="57.000000" fanoutRate="32.231946" numNets="15" extNets="14" luts="14" logicCap="6384700" signalCap="5903.645386" power="0.000010" sp="0.000004">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="400.000002" clockFreq2="400.000002" toggleRate="64.705879" toggleRate2="0.000000" totalRate="0.000000" name="oserdes_clk" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="1" extNets="0" luts="0" logicCap="297500" signalCap="0.000000" power="0.000038" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="400.000002" clockFreq2="400.000002" toggleRate="64.705879" toggleRate2="0.000000" totalRate="0.000000" name="oserdes_clk_1" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="1" extNets="0" luts="0" logicCap="297500" signalCap="0.000000" power="0.000038" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="400.000002" clockFreq2="400.000002" toggleRate="64.705879" toggleRate2="0.000000" totalRate="0.000000" name="oserdes_clk_10" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="1" extNets="0" luts="0" logicCap="297500" signalCap="0.000000" power="0.000038" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="400.000002" clockFreq2="400.000002" toggleRate="64.705879" toggleRate2="0.000000" totalRate="0.000000" name="oserdes_clk_2" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="1" extNets="0" luts="0" logicCap="297500" signalCap="0.000000" power="0.000038" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="400.000002" clockFreq2="400.000002" toggleRate="64.705879" toggleRate2="0.000000" totalRate="0.000000" name="oserdes_clk_3" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="1" extNets="0" luts="0" logicCap="297500" signalCap="0.000000" power="0.000038" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="400.000002" clockFreq2="400.000002" toggleRate="129.411758" toggleRate2="0.000000" totalRate="0.000000" name="oserdes_clk_5" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="1" extNets="0" luts="0" logicCap="297500" signalCap="0.000000" power="0.000077" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="400.000002" clockFreq2="400.000002" toggleRate="64.705879" toggleRate2="0.000000" totalRate="0.000000" name="oserdes_clk_7" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="1" extNets="0" luts="0" logicCap="297500" signalCap="0.000000" power="0.000038" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="400.000002" clockFreq2="400.000002" toggleRate="64.705879" toggleRate2="0.000000" totalRate="0.000000" name="oserdes_clk_8" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="1" extNets="0" luts="0" logicCap="297500" signalCap="0.000000" power="0.000038" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="400.000002" clockFreq2="400.000002" toggleRate="64.705879" toggleRate2="0.000000" totalRate="0.000000" name="oserdes_clk_9" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="1" extNets="0" luts="0" logicCap="297500" signalCap="0.000000" power="0.000038" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="200.000001" clockFreq2="200.000001" toggleRate="0.566253" toggleRate2="0.485154" totalRate="3.666010" name="sys_diff_clock_clk_p" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.000000" fanout="1.944444" ru="0.000000" fanout2="2.428571" totalFanout="35.000000" fanoutRate="8.998264" numNets="18" extNets="18" luts="14" logicCap="8013400" signalCap="3979.059418" power="0.000003" sp="0.000001">
+				</LOGIC>
+				<LOGIC clock="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" clockFreq="100.000001" clockFreq2="100.000001" toggleRate="1.496287" toggleRate2="5.307057" totalRate="3585.342750" name="clk_pll_i" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.458244" fanout="1.732293" ru="0.000000" fanout2="1.867227" totalFanout="1443.000000" fanoutRate="1052.319906" numNets="961" extNets="833" SRL="961" logicCap="429936005" signalCap="187224.945328" power="0.000457" sp="0.000137">
+				</LOGIC>
+				<LOGIC clock="design_1_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0" clockFreq="30.000301" clockFreq2="30.000301" toggleRate="0.716402" toggleRate2="13.849894" totalRate="41.551614" name="design_1_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.103470" fanout="1.000000" ru="0.000000" fanout2="0.000000" totalFanout="18.000000" fanoutRate="0.000000" numNets="37" extNets="18" SRL="29" logicCap="1908000" signalCap="2511.861603" power="0.000002" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" clockFreq="100.000001" clockFreq2="100.000001" toggleRate="3.839916" toggleRate2="7.888585" totalRate="32051.324940" name="clk_pll_i" hierName="design_1_wrapper/design_1_i" writeRate="0.782574" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="9496" extNets="0" RAM="4812" logicCap="3474711848" signalCap="0.000000" power="0.007148" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/gen_ui_extra_clocks.u_bufg_clk_div2_n_0" clockFreq="200.000001" clockFreq2="200.000001" toggleRate="12.500000" toggleRate2="12.500000" totalRate="162.500000" name="clk_div2_bufg_in" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="1.000000" fanout="0.923077" ru="0.000000" fanout2="0.923077" totalFanout="12.000000" fanoutRate="150.000001" numNets="13" extNets="13" ffs="13" logicCap="585000" signalCap="2447.251099" power="0.000007" sp="0.000031">
+				</LOGIC>
+				<LOGIC clock="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" clockFreq="100.000001" clockFreq2="100.000001" toggleRate="4.913995" toggleRate2="7.036857" totalRate="119056.273911" name="clk_pll_i" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.573245" fanout="6.885050" ru="0.000000" fanout2="7.515971" totalFanout="164415.000000" fanoutRate="538515.547705" numNets="24228" extNets="23880" ffs="24228" logicCap="816524997" signalCap="17667590.538696" power="0.002679" sp="0.055116">
+				</LOGIC>
+				<LOGIC clock="design_1_i/mdm_1/U0/No_Dbg_Reg_Access.BUFG_DRCK/Dbg_Clk_0" clockFreq="30.000301" clockFreq2="30.000301" toggleRate="5.594088" toggleRate2="10.406091" totalRate="1174.758512" name="design_1_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/DRCK" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.568808" fanout="2.919048" ru="0.000000" fanout2="2.642857" totalFanout="613.000000" fanoutRate="698.500478" numNets="210" extNets="210" ffs="210" logicCap="6210000" signalCap="85489.206970" power="0.000008" sp="0.000082">
+				</LOGIC>
+				<LOGIC clock="design_1_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0" clockFreq="30.000301" clockFreq2="30.000301" toggleRate="2.396062" toggleRate2="7.478201" totalRate="95.842490" name="design_1_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/UPDATE" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.250801" fanout="4.100000" ru="0.000000" fanout2="5.181818" totalFanout="164.000000" fanoutRate="78.987369" numNets="40" extNets="40" ffs="40" logicCap="1530000" signalCap="21818.425323" power="0.000001" sp="0.000010">
+				</LOGIC>
+				<LOGIC clock="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/mmcm_ps_clk" clockFreq="50.000000" clockFreq2="50.000000" toggleRate="0.000000" toggleRate2="0.000000" totalRate="0.000000" name="mmcm_ps_clk_bufg_in" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="1.000000" fanout="1.538462" ru="0.000000" fanout2="0.000000" totalFanout="20.000000" fanoutRate="0.000000" numNets="13" extNets="13" ffs="13" logicCap="0" signalCap="3362.229858" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_iodelay_ctrl/CLK" clockFreq="200.000001" clockFreq2="200.000001" toggleRate="5.300494" toggleRate2="9.082529" totalRate="318.029641" name="sys_diff_clock_clk_p" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.816497" fanout="2.813559" ru="0.000000" fanout2="2.600000" totalFanout="166.000000" fanoutRate="357.839430" numNets="60" extNets="59" ffs="60" logicCap="1755000" signalCap="22953.858276" power="0.000014" sp="0.000069">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="400.000038" clockFreq2="15.533653" toggleRate="0.797962" toggleRate2="2.842768" totalRate="5.819321" name="Unassigned_Clock" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.000000" fanout="1.246377" ru="0.000000" fanout2="1.000000" totalFanout="86.000000" fanoutRate="23.277285" numNets="77" extNets="69" luts="73" logicCap="6069300" signalCap="9876.610596" power="0.000052" sp="0.000003">
+				</LOGIC>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="BRAM">
+				<MODULE name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" count="4">
+					<GROUPSUMMARY>
+						<BRAM name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" hierName="design_1_wrapper/design_1_i" mode="RAMB36" toggleRate="23.289273" power="0.016517" sp="0.000376" vccbram="0.001172" vccint="0.015345">
+							<RAMPORT name="A" clock="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" clockFreq="100.000001" readWidth="18" writeWidth="18" enableRate="0.998464" writeMode="READ_FIRST" writeRate="0.000000">
+							</RAMPORT>
+							<RAMPORT name="B" clock="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" clockFreq="100.000001" readWidth="18" writeWidth="18" enableRate="0.759569" writeMode="READ_FIRST" writeRate="0.500027">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" count="2">
+					<GROUPSUMMARY>
+						<BRAM name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" hierName="design_1_wrapper/design_1_i" mode="RAMB36" toggleRate="16.696609" power="0.005985" sp="0.000454" vccbram="0.000423" vccint="0.005561">
+							<RAMPORT name="A" clock="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" clockFreq="100.000001" readWidth="36" writeWidth="36" enableRate="0.998464" writeMode="READ_FIRST" writeRate="0.000000">
+							</RAMPORT>
+							<RAMPORT name="B" clock="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" clockFreq="100.000001" readWidth="36" writeWidth="36" enableRate="0.259667" writeMode="READ_FIRST" writeRate="1.000000">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" count="32">
+					<GROUPSUMMARY>
+						<BRAM name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" hierName="design_1_wrapper/design_1_i" mode="RAMB36" toggleRate="0.417711" power="0.013461" sp="0.000048" vccbram="0.001193" vccint="0.012268">
+							<RAMPORT name="A" clock="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" clockFreq="100.000001" readWidth="1" writeWidth="1" enableRate="0.009233" writeMode="WRITE_FIRST" writeRate="0.000488">
+							</RAMPORT>
+							<RAMPORT name="B" clock="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" clockFreq="100.000001" readWidth="1" writeWidth="1" enableRate="0.223762" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" count="2">
+					<GROUPSUMMARY>
+						<BRAM name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" hierName="design_1_wrapper/design_1_i" mode="RAMB36" toggleRate="16.212890" power="0.004991" sp="0.000195" vccbram="0.000365" vccint="0.004627">
+							<RAMPORT name="A" clock="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" clockFreq="100.000001" readWidth="18" writeWidth="18" enableRate="0.672793" writeMode="WRITE_FIRST" writeRate="0.412852">
+							</RAMPORT>
+							<RAMPORT name="B" clock="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/u_bufg_clkdiv0_0" clockFreq="100.000001" readWidth="18" writeWidth="18" enableRate="0.450892" writeMode="WRITE_FIRST" writeRate="0.000000">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="MMCM">
+				<MMCM name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/gen_ui_extra_clocks.mmcm_i" clock="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/pll_clk3" clockFreq="100.000001" phaseShift="Dynamic" interpolators="1" divCounter="1" multCounter="8.000000" clock0Div="8" clock1Div="8" clock2Div="8" clock3Div="8" clock4Div="8" clock5Div="16" clock6Div="4" powerDownRate="0.000000" Vccint="0.001777" Vccaux="0.095817">
+				</MMCM>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="PLL">
+				<PLL name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_infrastructure/plle2_i" clock="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_ddr3_clk_ibuf/sys_clk_ibufg" clockFreq="200.000001" divCounter="1" multCounter="4" clock0Div="1" clock1Div="2" clock2Div="32" clock3Div="8" clock4Div="4" clock5Div="1" powerDownRate="0.000000" Vccint="0.005278" Vccaux="0.087075">
+				</PLL>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="IO">
+				<MODULE name="ddr3_sdram_addr&lt;0:13&gt;" count="14">
+					<GROUPSUMMARY>
+						<IO name="ddr3_sdram_addr&lt;0:13&gt;" clock="oserdes_clk_4" clockFreq="400.000000" ioStandard="SSTL15" bidis="0" inputs="0" outputs="14" signalRate="25.960383" toggleRate="6.490096" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHP="14" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.002825" vccAux="0.000209" vcco="0.125770" vccoCurrent="0.083847" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_sdram_ba&lt;0:2&gt;" count="3">
+					<GROUPSUMMARY>
+						<IO name="ddr3_sdram_ba&lt;0:2&gt;" clock="oserdes_clk_5" clockFreq="400.000000" ioStandard="SSTL15" bidis="0" inputs="0" outputs="3" signalRate="22.027140" toggleRate="5.506785" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHP="3" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000597" vccAux="0.000038" vcco="0.026911" vccoCurrent="0.017940" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_sdram_cas_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="ddr3_sdram_cas_n" clock="oserdes_clk_6" clockFreq="400.000000" ioStandard="SSTL15" bidis="0" inputs="0" outputs="1" signalRate="19.295084" toggleRate="4.823771" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHP="1" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000197" vccAux="0.000011" vcco="0.008961" vccoCurrent="0.005974" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_sdram_ck_p[0]" count="1">
+					<GROUPSUMMARY>
+						<IO name="ddr3_sdram_ck_p[0]" clock="oserdes_clk_5" clockFreq="400.000000" ioStandard="DIFF_SSTL15" bidis="0" inputs="0" outputs="1" signalRate="800.000000" toggleRate="100.000000" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="DDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHP="1" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000647" vccAux="0.000922" vcco="0.014355" vccoCurrent="0.009570" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_sdram_cke[0]" count="1">
+					<GROUPSUMMARY>
+						<IO name="ddr3_sdram_cke[0]" clock="oserdes_clk_5" clockFreq="400.000000" ioStandard="SSTL15" bidis="0" inputs="0" outputs="1" signalRate="7.692769" toggleRate="1.923192" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHP="1" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000189" vccAux="0.000004" vcco="0.008921" vccoCurrent="0.005948" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_sdram_cs_n[0]" count="1">
+					<GROUPSUMMARY>
+						<IO name="ddr3_sdram_cs_n[0]" clock="oserdes_clk_6" clockFreq="400.000000" ioStandard="SSTL15" bidis="0" inputs="0" outputs="1" signalRate="21.460007" toggleRate="5.365002" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHP="1" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000199" vccAux="0.000012" vcco="0.008968" vccoCurrent="0.005979" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_sdram_dm&lt;0:7&gt;" count="8">
+					<GROUPSUMMARY>
+						<IO name="ddr3_sdram_dm&lt;0:7&gt;" clock="oserdes_clk" clockFreq="400.000000" ioStandard="SSTL15" bidis="0" inputs="0" outputs="8" signalRate="9.564619" toggleRate="2.391155" outputEnableRate="0.500000" outputLoad="0.000000" dataRate="DDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHP="8" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.001576" vccAux="0.000044" vcco="0.035841" vccoCurrent="0.023894" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_sdram_dq&lt;0:63&gt;" count="64">
+					<GROUPSUMMARY>
+						<IO name="ddr3_sdram_dq&lt;0:63&gt;" clock="u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk" clockFreq="400.000031" ioStandard="SSTL15_T_DCI" bidis="64" inputs="0" outputs="0" signalRate="3.022540" toggleRate="0.755635" outputEnableRate="0.500000" outputLoad="0.000000" dataRate="DDR" serdes="DDR3" preEmphasis="No" ioDelay="High_Perform" ibufLowPower="No" inTerm="RTT_NONE" outTerm="RDRV_NONE_NONE" numHP="64" ibufDisable="0.017709" dcitermDisable="0.017709" ioBank="0" vccInt="0.018264" vccAux="0.339441" vcco="0.655452" vccoCurrent="0.436968" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_sdram_dqs_n&lt;0:7&gt;" count="8">
+					<GROUPSUMMARY>
+						<IO name="ddr3_sdram_dqs_n&lt;0:7&gt;" clock="oserdes_clk_3" clockFreq="400.000000" ioStandard="" bidis="0" inputs="0" outputs="0" signalRate="0.000000" toggleRate="0.000000" dataRate="DDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.001120" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_sdram_dqs_p&lt;0:7&gt;" count="8">
+					<GROUPSUMMARY>
+						<IO name="ddr3_sdram_dqs_p&lt;0:7&gt;" clock="oserdes_clk_3" clockFreq="400.000000" ioStandard="DIFF_SSTL15_T_DCI" bidis="8" inputs="0" outputs="0" signalRate="200.000000" toggleRate="50.000000" outputEnableRate="0.500000" outputLoad="0.000000" dataRate="DDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="RDRV_NONE_NONE" numHP="8" ibufDisable="0.000000" dcitermDisable="0.017709" ioBank="0" vccInt="0.005149" vccAux="0.013485" vcco="0.136972" vccoCurrent="0.091315" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_sdram_odt[0]" count="1">
+					<GROUPSUMMARY>
+						<IO name="ddr3_sdram_odt[0]" clock="oserdes_clk_6" clockFreq="400.000000" ioStandard="SSTL15" bidis="0" inputs="0" outputs="1" signalRate="34.729004" toggleRate="8.682251" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHP="1" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000208" vccAux="0.000020" vcco="0.009014" vccoCurrent="0.006009" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_sdram_ras_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="ddr3_sdram_ras_n" clock="oserdes_clk_6" clockFreq="400.000000" ioStandard="SSTL15" bidis="0" inputs="0" outputs="1" signalRate="15.950325" toggleRate="3.987581" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHP="1" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000195" vccAux="0.000009" vcco="0.008949" vccoCurrent="0.005966" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_sdram_reset_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="ddr3_sdram_reset_n" clock="clk_pll_i" clockFreq="100.000001" ioStandard="LVCMOS15_12_FAST" bidis="0" inputs="0" outputs="1" signalRate="0.737964" toggleRate="0.737964" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHP="1" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.000002" vcco="0.000008" vccoCurrent="0.000006" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ddr3_sdram_we_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="ddr3_sdram_we_n" clock="oserdes_clk_6" clockFreq="400.000000" ioStandard="SSTL15" bidis="0" inputs="0" outputs="1" signalRate="19.696081" toggleRate="4.924020" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="Yes" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHP="1" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000197" vccAux="0.000011" vcco="0.008962" vccoCurrent="0.005975" extTerm="FP_VTT_50">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="reset" count="1">
+					<GROUPSUMMARY>
+						<IO name="reset" clock="clk_div2_bufg_inclk_pll_immcm_ps_clk_bufg_insys_diff_clock_clk_p" clockFreq="200.000001" ioStandard="LVCMOS15" bidis="0" inputs="1" outputs="0" signalRate="0.000000" toggleRate="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" numHP="1" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="rs232_uart_rxd" count="1">
+					<GROUPSUMMARY>
+						<IO name="rs232_uart_rxd" clock="clk_pll_i" clockFreq="100.000001" ioStandard="LVCMOS25" bidis="0" inputs="1" outputs="0" signalRate="12.500000" toggleRate="12.500000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000004" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="rs232_uart_txd" count="1">
+					<GROUPSUMMARY>
+						<IO name="rs232_uart_txd" clock="clk_pll_i" clockFreq="100.000001" ioStandard="LVCMOS25_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="0.059386" toggleRate="0.059386" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" numHR="1" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.000000" vcco="0.000002" vccoCurrent="0.000001" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="sys_diff_clock_clk_p" count="1">
+					<GROUPSUMMARY>
+						<IO name="sys_diff_clock_clk_p" clock="sys_diff_clock_clk_p" clockFreq="200.000001" ioStandard="DIFF_SSTL15" bidis="0" inputs="1" outputs="0" signalRate="400.000000" toggleRate="200.000000" dataRate="Clock" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" numHP="1" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.001010" vccAux="0.005770" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="PHASER">
+				<PHASER name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/phaser_ref_i" phaserIn="4" phaserOut="4" inFifo="4" outFifo="4" fifoClk="150.000001" memClk="440.000010" vccint="0.032195" vccaux="0.109800">
+				</PHASER>
+				<PHASER name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/phaser_ref_i" phaserIn="4" phaserOut="4" inFifo="4" outFifo="4" fifoClk="150.000001" memClk="440.000010" vccint="0.032195" vccaux="0.109800">
+				</PHASER>
+				<PHASER name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/phaser_ref_i" phaserIn="0" phaserOut="3" inFifo="0" outFifo="3" fifoClk="100.000001" memClk="480.000017" vccint="0.015558" vccaux="0.092520">
+				</PHASER>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="XADC">
+				<XADC name="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.XADC_inst" clock="design_1_i/mig_7series_0/u_design_1_mig_7series_0_1_mig/u_iodelay_ctrl/CLK" clockFreq="200.000001" power="0.003880" vccInt="0.001000" vccAux="0.002880">
+				</XADC>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="IOBANK">
+				<IOBANK numInternalVref="0" numDelayControl="1" numLVDSBanks="0">
+				</IOBANK>
+			</BLOCKTYPE>
+		</BYTYPE>
+	</BLOCKDETAILS>
+</POWERDATA>
+
